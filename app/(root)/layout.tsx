@@ -4,6 +4,7 @@ import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/sonner"
 import IntercertHeader from "@/app/(root)/_components/Header";
+import IntercertFooter from "@/app/(root)/_components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,7 @@ export default function RootLayout({
       >
       <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
       >
@@ -40,6 +41,7 @@ export default function RootLayout({
           <main>
               {children}
           </main>
+          <IntercertFooter/>
           <Toaster/>
       </ThemeProvider>
       </body>
