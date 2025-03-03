@@ -21,7 +21,7 @@ export default function IntercertFooter() {
                         </p>
                     </div>
                     <div className="space-y-3">
-                        <h3 className="font-medium">Our Location</h3>
+                        <h3 className="font-medium">Ubicación</h3>
                         <address className="not-italic text-sm text-muted-foreground">
                             INTERCERT SERVICES S.A.C.
                             <br/>
@@ -42,7 +42,7 @@ export default function IntercertFooter() {
                         </div>
                     </div>
                     <div className="space-y-3">
-                        <h3 className="font-medium">Our Services</h3>
+                        <h3 className="font-medium">Servicios</h3>
                         <ul className="space-y-1 text-sm text-muted-foreground">
                             <li>Certificación ISO</li>
                             <li>Certificación de Personas</li>
