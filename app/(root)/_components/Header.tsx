@@ -14,8 +14,6 @@ import {
     navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
 
-import {redirect} from "next/navigation";
-
 
 const services: { title: string; href: string; description: string }[] = [
     {
