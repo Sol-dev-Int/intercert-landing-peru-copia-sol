@@ -44,6 +44,7 @@ export default function IntercertFooter() {
                     <div className="space-y-3">
                         <h3 className="font-medium">Servicios</h3>
                         <ul className="space-y-1 text-sm text-muted-foreground">
+                            {/*TODO: add legal and service links*/}
                             <li>Certificación ISO</li>
                             <li>Certificación de Personas</li>
                         </ul>
