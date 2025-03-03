@@ -2,10 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { CheckCircle, Clock, Globe, Mail, MapPin, Phone, Shield, Star, Users } from "lucide-react"
-
 import { cn } from "@/lib/utils"
 import {
     NavigationMenu,
@@ -17,17 +14,19 @@ import {
     navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
 
+import {redirect} from "next/navigation";
+
 
 const services: { title: string; href: string; description: string }[] = [
     {
         title: "Certificaciones ISO",
-        href: "/",
+        href: "/certificaciones-iso",
         description:
             "Certificaciones de sistemas de gestión de calidad, medio ambiente, seguridad y salud en el trabajo, entre otros.",
     },
     {
         title: "Certificacion de Personas",
-        href: "/",
+        href: "/certificacion-de-personas",
         description:
             "Certificaciones de auditor líder, auditor interno, entre otros.",
     },
@@ -44,7 +43,7 @@ export default function IntercertHeader() {
                     <NavigationMenu>
                         <NavigationMenuList>
                             <NavigationMenuItem>
-                                <Link href='#' legacyBehavior passHref>
+                                <Link href='/' legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                         Inicio
                                     </NavigationMenuLink>
@@ -67,19 +66,20 @@ export default function IntercertHeader() {
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <Link href='#' legacyBehavior passHref>
+                                <Link href='/nosotros' legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                         Nosotros
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <Link href='#' legacyBehavior passHref>
+                                <Link href='/parthners' legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                         Parthners
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
+                            {/*
                             <NavigationMenuItem>
                                 <Link href='#' legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -87,14 +87,23 @@ export default function IntercertHeader() {
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
+
+                            TODO: verificar si la tienda sera otra pagina o como sera la implementacion de esta
+                            */}
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>
                 <div className="flex flex-1 items-center justify-end space-x-4">
-                    <Button variant="outline" size="sm" className="hidden md:flex">
-                        Contactanos
+                    <Button asChild variant="outline" size="sm"
+                            className="hidden md:flex">
+                        <Link href="/contacto"> Contactanos </Link>
                     </Button>
-                    <Button size="sm">Verifica tu Certificado</Button>
+
+                    <Button asChild size="sm">
+                        <Link href="/vertificacion-certificado">
+                            Verifica tu Certificado
+                        </Link>
+                    </Button>
                 </div>
             </div>
         </header>
