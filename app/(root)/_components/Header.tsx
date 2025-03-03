@@ -14,19 +14,19 @@ export default function IntercertHeader() {
                     </Link>
                     <nav className="hidden md:flex gap-6">
                         <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
+                            Inicio
+                        </Link>
+                        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
                             Servicios
                         </Link>
                         <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
                             Nosotros
                         </Link>
                         <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
-                            Acerditaciones
+                            Partners
                         </Link>
                         <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
                             Tienda
-                        </Link>
-                        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
-                            Contacto
                         </Link>
                     </nav>
                 </div>
