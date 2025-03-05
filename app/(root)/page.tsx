@@ -16,7 +16,7 @@ export default function Home() {
               <h2> Acreditaciones </h2>
           </section>
           <section>
-              {/*TODO: add years in buissness*/}
+              <h2> mas de +17 años de experiencia</h2>
           </section>
           <section>
               <h2> Parthners </h2>
