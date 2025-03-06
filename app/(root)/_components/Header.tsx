@@ -47,7 +47,7 @@ export default function IntercertHeader() {
                     <Link href="/" className="flex items-center ">
                         <h1> Intercert </h1>
                     </Link>
-                    <NavigationMenu>
+                    <NavigationMenu className={`hidden md:flex`}>
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <Link href='/' legacyBehavior passHref>
