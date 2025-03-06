@@ -13,6 +13,15 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
+import {AlignJustifyIcon} from "lucide-react";
+
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 
 const services: { title: string; href: string; description: string }[] = [
@@ -23,7 +32,7 @@ const services: { title: string; href: string; description: string }[] = [
             "Certificaciones de sistemas de gestión de calidad, medio ambiente, seguridad y salud en el trabajo, entre otros.",
     },
     {
-        title: "Certificacion de Personas",
+        title: "Certificación de Personas",
         href: "/certificacion-de-personas",
         description:
             "Certificaciones de auditor líder, auditor interno, entre otros.",
@@ -102,6 +111,53 @@ export default function IntercertHeader() {
                             Verifica tu Certificado
                         </Link>
                     </Button>
+
+                    <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                            <Button variant="outline" className={`flex md:hidden`}>
+                                <AlignJustifyIcon/>
+                            </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                            <DropdownMenuGroup>
+                                <Link href='/'  passHref>
+                                    <DropdownMenuItem>
+                                        Inicio
+                                    </DropdownMenuItem>
+                                </Link>
+
+                                <Link href='/certificaciones-iso'  passHref>
+                                    <DropdownMenuItem>
+                                        Certificaciones ISO
+                                    </DropdownMenuItem>
+                                </Link>
+
+                                <Link href='/certificacion-de-personas' passHref>
+                                    <DropdownMenuItem>
+                                        Certificación de Personas
+                                    </DropdownMenuItem>
+                                </Link>
+
+                                <Link href='/nosotros' passHref>
+                                    <DropdownMenuItem>
+                                        Nosotros
+                                    </DropdownMenuItem>
+                                </Link>
+
+                                <Link href='/parthners' passHref>
+                                    <DropdownMenuItem>
+                                        Parthers
+                                    </DropdownMenuItem>
+                                </Link>
+
+                                <Link href='/contacto' passHref>
+                                    <DropdownMenuItem>
+                                        Contacto
+                                    </DropdownMenuItem>
+                                </Link>
+                            </DropdownMenuGroup>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
                 </div>
             </div>
         </header>
