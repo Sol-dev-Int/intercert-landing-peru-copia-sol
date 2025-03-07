@@ -1,12 +1,19 @@
+import bg from '../../../public/certificate-background.png'
+
 export default function PrivacyPolicyPage(){
     return (
-        <div className={`flex flex-col items-center mb-12`}>
-            <div className={`flex`}>
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+        <div className={`flex flex-col items-center `}>
+            <div className="w-full py-12 md:py-24 lg:py-40  "
+            style={{
+                backgroundImage: `url(${bg.src})`,
+                width: '100%',
+                objectFit: 'contain',
+            }}>
+                <h1 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
                     Política de Privacidad
                 </h1>
             </div>
-            <div className={`flex flex-col px-4 max-w-5xl`}>
+            <div className={`flex flex-col px-4 max-w-5xl my-12`}>
                 <span className="leading-7 [&:not(:first-child)]:mt-6">
                     En INTERCERT, respetamos su privacidad y nos comprometemos a
                     proteger la información personal que pueda proporcionarnos a
