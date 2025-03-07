@@ -25,9 +25,12 @@ export default async function Home() {
                               con los estándares internacionales de calidad.
                           </p>
                           <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                              <Link href='/contacto' passHref>
-                                  <Button size="lg"> Contáctanos </Button>
-                              </Link>
+
+                              <Button size="lg" asChild>
+                                  <Link href='/contacto' passHref>
+                                      Contáctanos
+                                  </Link>
+                              </Button>
                               <Button variant="outline" size="lg">
                                   Learn More
                               </Button>
