@@ -53,17 +53,17 @@ export default function IntercertFooter() {
                         <h3 className="font-medium">Legal</h3>
                         <ul className="space-y-1 text-sm text-muted-foreground">
                             <li>
-                                <Link href="#" className="hover:underline">
+                                <Link href="/politica-de-privacidad" className="hover:underline">
                                     Política de Privacidad
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline">
+                                <Link href="/politica-de-imparcialidad" className="hover:underline">
                                     Política de Imparcialidad
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline">
+                                <Link href="/politica-de-calidad" className="hover:underline">
                                     Política de Calidad
                                 </Link>
                             </li>
