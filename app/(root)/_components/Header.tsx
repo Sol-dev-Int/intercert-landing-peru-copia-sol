@@ -57,6 +57,13 @@ export default function IntercertHeader() {
                                 </Link>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
+                                <Link href='/nosotros' legacyBehavior passHref>
+                                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                        Nosotros
+                                    </NavigationMenuLink>
+                                </Link>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
                                 <NavigationMenuTrigger>Servicios</NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -72,13 +79,7 @@ export default function IntercertHeader() {
                                     </ul>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <Link href='/nosotros' legacyBehavior passHref>
-                                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                        Nosotros
-                                    </NavigationMenuLink>
-                                </Link>
-                            </NavigationMenuItem>
+
                             <NavigationMenuItem>
                                 <Link href='/parthners' legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -126,6 +127,12 @@ export default function IntercertHeader() {
                                     </DropdownMenuItem>
                                 </Link>
 
+                                <Link href='/nosotros' passHref>
+                                    <DropdownMenuItem>
+                                        Nosotros
+                                    </DropdownMenuItem>
+                                </Link>
+
                                 <Link href='/certificaciones-iso'  passHref>
                                     <DropdownMenuItem>
                                         Certificaciones ISO
@@ -138,11 +145,7 @@ export default function IntercertHeader() {
                                     </DropdownMenuItem>
                                 </Link>
 
-                                <Link href='/nosotros' passHref>
-                                    <DropdownMenuItem>
-                                        Nosotros
-                                    </DropdownMenuItem>
-                                </Link>
+
 
                                 <Link href='/parthners' passHref>
                                     <DropdownMenuItem>
