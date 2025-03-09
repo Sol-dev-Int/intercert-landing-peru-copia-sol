@@ -42,7 +42,7 @@ const services: { title: string; href: string; description: string }[] = [
 export default function IntercertHeader() {
     return (
         <header className="sticky top-0 z-40 w-full border-b bg-background">
-            <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0 p-4">
+            <div className="flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0 p-4">
                 <div className="flex gap-6 md:gap-10">
                     <Link href="/" className="flex items-center ">
                         <h1> Intercert </h1>
@@ -81,9 +81,9 @@ export default function IntercertHeader() {
                             </NavigationMenuItem>
 
                             <NavigationMenuItem>
-                                <Link href='/parthners' legacyBehavior passHref>
+                                <Link href='/partners' legacyBehavior passHref>
                                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                        Parthners
+                                        Partners
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>

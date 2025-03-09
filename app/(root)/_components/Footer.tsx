@@ -6,7 +6,7 @@ export default function IntercertFooter() {
     //gap-4 md:h-24 md:flex-row
     return (
         <footer className="w-full border-t bg-muted py-8">
-            <div className="container px-4 md:px-6">
+            <div className="px-4 md:px-6">
                 <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
                     <div className="space-y-3">
                         <div className="flex items-center space-x-2">
