@@ -1,7 +1,6 @@
 'use server'
 
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import bg from '../../public/certificate-background.png'
 
