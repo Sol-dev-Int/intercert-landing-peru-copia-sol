@@ -108,7 +108,7 @@ export default function IntercertHeader() {
                     </Button>
 
                     <Button asChild size="sm">
-                        <Link href="/vertificacion-certificado">
+                        <Link href="/verificacion-certificado">
                             Verifica tu Certificado
                         </Link>
                     </Button>
