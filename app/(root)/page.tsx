@@ -3,8 +3,8 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import bg from '../../public/certificate-background.png'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from "next/image";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import CompaniesCarrousel from "@/app/(root)/_components/CompaniesCarrousel";
 
 export default async function Home() {
   return (
@@ -37,20 +37,12 @@ export default async function Home() {
                               </Button>
                           </div>
                       </div>
-
-
-
                       {/*TODO: add socials */}
-
-
                   </div>
               </div>
           </section>
           <section>
-
-          </section>
-          <section>
-              {/*TODO: carrusel empresas */}
+              <CompaniesCarrousel/>
           </section>
           < section className="py-12 px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl mb-8">Nuestros Servicios</h2>
