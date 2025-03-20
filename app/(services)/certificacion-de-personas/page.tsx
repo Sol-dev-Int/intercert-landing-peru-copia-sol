@@ -3,8 +3,6 @@ import bg from "@/public/mockup-certificado-personas.webp"
 export default function PeopleCertificacionsPage(){
     return (
         <>
-            <h1> Certificaciones de Personas </h1>
-
             <div className={`flex flex-col items-center `}>
                 <div className="w-full py-12 md:py-24 lg:py-40  "
                      style={{
