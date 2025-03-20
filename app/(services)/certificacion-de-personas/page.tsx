@@ -17,7 +17,6 @@ export default function PeopleCertificacionsPage(){
                         className="block text-center text-xl font-bold italic tracking-tighter sm:text-2xl md:text-3xl text-white">
                         "Que el mundo evidencia tus competencias, es posible"
                     </span>
-
                 </div>
                 <div className={`flex flex-col px-4 max-w-5xl my-12`}>
                     <span className="leading-7 [&:not(:first-child)]:mt-6">

@@ -17,6 +17,36 @@ export default function ImpartialityPolicyPage(){
                         "Obtén el sello de confianza que tu organización necesita"
                 </span>
             </div>
+            <div className={`flex flex-col px-4 max-w-5xl my-12`}>
+                <span className="leading-7 [&:not(:first-child)]:mt-6">
+                        En la actualidad, en el Mercado Internacional, las empresas están tomando mayor conciencia de la
+                        importancia que tiene el certificarse bajo normativas internacionales ISO.
+                </span>
+                <span className="leading-7 [&:not(:first-child)]:mt-6">
+                        En el mercado de hoy en día exige evidencia de calidad, seguridad, ética y compromiso con el medio
+                        ambiente en los procesos productivos, industriales y de servicios, para garantizar un estándar de
+                        excelencia y desarollo sostenible.
+                </span>
+                <span className="leading-7 [&:not(:first-child)]:mt-6">
+                    La crisis, la globalización y los avances tecnológicos han cambiado la naturaleza de los negocios y le
+                    han dado una nueva definición a un concepto clave para que la economía tenga éxito: la connfianza. La
+                    confianza se construye mediante la transparencia en todo proceso, se requiere que las organizaciones
+                    brinden la información necesaria de su estado actual y para que este proceso sea más transparente aún,
+                    se necesita que un tercero especializado recopile, analice, estructure la informacion con rigor, recomiende
+                    y otrogue la certificación.
+                </span>
+                <span className="leading-7 [&:not(:first-child)]:mt-6">
+                    La certificación es utilizada como herramienta de generación de confianza ne las emrpresas, en los mercados
+                    y en conjunto de la sociedad.
+                </span>
+                <span className="leading-7 [&:not(:first-child)]:mt-6">
+                    En Intercert hemos desarrollado una metodología de certificación de excelencia, con la experiencia
+                    que solo un grupo de profesionales apasionados por la gestión de la calidad puede crear.
+                </span>
+                <span className="leading-7 [&:not(:first-child)]:mt-6">
+                    Los invitamos a ser parte de la red exclusiva de clientes certificados por Intercert.
+                </span>
+            </div>
         </div>
     );
 }
