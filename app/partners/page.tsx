@@ -48,6 +48,30 @@ export default function PartnersPage() {
                         nuestros clientes a nivel global.
                     </span>
                 </div>
+                <div className="w-full text-center bg-blue-500 p-6 text-white">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className={`flex flex-col px-4 max-w-5xl my-12`}>
+                            <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">
+                                ¿Qué es Intercert Partner?
+                            </h2>
+                            <span className="leading-7 [&:not(:first-child)]:mt-6">
+                                Es un esquema que Intercert ha desarrollado con el objetivo de respaldar y escalar los
+                                negocios de todos aquellos profesionales del rubro de la gestión y de la calidad que no
+                                cuentan con el tiempo, formación, recursos humanos e inversión financiera para crear su propio
+                                organismo de certificación.
+                            </span>
+                            <span className="leading-7 [&:not(:first-child)]:mt-6">
+                                Beneficios de ser Partner de Intercert
+                            </span>
+                        </div>
+                        <div>
+
+                            <p className="text-justify">
+                                Este es el párrafo de la segunda columna. Se adapta a la pantalla y en dispositivos pequeños, las columnas se apilan una encima de otra.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
