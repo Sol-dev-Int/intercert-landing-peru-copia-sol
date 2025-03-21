@@ -147,7 +147,7 @@ export default function IntercertHeader() {
 
 
 
-                                <Link href='/parthners' passHref>
+                                <Link href='/partners' passHref>
                                     <DropdownMenuItem>
                                         Parthers
                                     </DropdownMenuItem>

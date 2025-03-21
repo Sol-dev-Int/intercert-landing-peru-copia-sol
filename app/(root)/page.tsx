@@ -68,8 +68,6 @@ export default async function Home() {
           <section>
               <h2> Contacto </h2>
           </section>
-
-
       </>
   );
 }

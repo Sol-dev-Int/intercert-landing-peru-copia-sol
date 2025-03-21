@@ -10,7 +10,7 @@ export default async function IntercertNotFound() {
                 Error 404 - Pagina No Encontrada
             </h1>
             <p className="leading-7 [&:not(:first-child)]:mt-6">
-                Parece que la Pagina que buscas no existe :c
+                Parece que la Pagina que buscas no existe :'v
             </p>
             <Button size="lg" asChild>
                 <Link href='/'>
