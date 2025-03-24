@@ -3,6 +3,8 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import bg from '../../public/certificate-background.png'
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import CompaniesCarrousel from "@/app/(root)/_components/CompaniesCarrousel";
 
 export default async function Home() {
   return (
@@ -35,23 +37,45 @@ export default async function Home() {
                               </Button>
                           </div>
                       </div>
-
-
-
                       {/*TODO: add socials */}
-
-
                   </div>
               </div>
           </section>
           <section>
-
+              <CompaniesCarrousel/>
           </section>
-          <section>
-              {/*TODO: carrusel empresas */}
-          </section>
-          <section>
-              <h2> Servicios </h2>
+          < section className="py-12 px-4 md:px-6">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl mb-8">Nuestros Servicios</h2>
+              <div className="grid gap-6 md:grid-cols-2">
+                  <Card>
+                      <CardHeader>
+                          <CardTitle>Certificaciones ISO </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                          <p>
+                              We offer a comprehensive range of ISO certification services including ISO 9001, ISO 14001, ISO 45001,
+                              and more.
+                          </p>
+                      </CardContent>
+                      <CardFooter>
+                          <Button variant="outline">Learn More</Button>
+                      </CardFooter>
+                  </Card>
+                  <Card>
+                      <CardHeader>
+                          <CardTitle>Certificaciones de Personas</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                          <p>
+                              Enhance your career with our auditor certification programs. Become a certified auditor for various
+                              ISO standards.
+                          </p>
+                      </CardContent>
+                      <CardFooter>
+                          <Button variant="outline">Learn More</Button>
+                      </CardFooter>
+                  </Card>
+              </div>
           </section>
           <section>
               <h2> Acreditaciones </h2>
