@@ -1,8 +1,56 @@
 "use client";
+import Autoplay from "embla-carousel-autoplay"
 import { useState } from "react";
 import bg from "@/public/intercert-partner.webp";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+
+const images: string[] = [
+    "/iso-certificacions/bpa.webp",
+    "/iso-certificacions/bpm.webp",
+    "/iso-certificacions/haccp.webp",
+    "/iso-certificacions/iso17020.webp",
+    "/iso-certificacions/iso17021.webp",
+    "/iso-certificacions/iso17025.webp",
+    "/iso-certificacions/iso22005.webp",
+    "/iso-certificacions/iso28000.webp",
+    "/iso-certificacions/iso31000.webp",
+    "/iso-certificacions/iso56002.webp",
+    "/iso-certificacions/iso90003.webp",
+    "/iso-certificacions/isoiec2382.webp",
+    "/iso-certificacions/isoiec29119.webp",
+    "/iso-certificacions/sio10002.webp"
+];
+
+export function CarouselSize() {
+    return (
+        <Carousel opts={{ align: "start" }} className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl pl-8 sm:pl-0 pt-10">
+            <CarouselContent>
+                {images.map((src: string, index: number) => (
+                    <CarouselItem key={index} className="sm:basis-2 md:basis-1/2 lg:basis-1/4">
+                        <div className="p-1">
+                            <Card className="shadow-none border-none">
+                                <CardContent className="flex aspect-square items-center justify-center p-1">
+                                    <img src={src} alt={`Imagen ${index + 1}`} className="w-full h-full object-cover rounded-lg" />
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </CarouselItem>
+                ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+        </Carousel>
+    );
+}
 
 export default function PartnersPage() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -86,6 +134,8 @@ export default function PartnersPage() {
         }
     ];
 
+
+
     return (
         <>
             <section
@@ -168,6 +218,12 @@ export default function PartnersPage() {
                         </div>
                     </div>
                 </div>
+                <div className={`flex flex-col px-4 max-w-5xl my-12`}>
+                    <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">
+                        Auditorias y certificaciones disponibles
+                    </h2>
+                    <CarouselSize />
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 max-w-6xl">
                     {columnData.map((col, index) => (
                         <div key={index} className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg">
@@ -181,6 +237,8 @@ export default function PartnersPage() {
                         </div>
                     ))}
                 </div>
+
+
             </div>
         </>
     );
