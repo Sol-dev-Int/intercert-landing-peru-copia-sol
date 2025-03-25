@@ -30,11 +30,65 @@ const images: string[] = [
     "/iso-certificacions/sio10002.webp"
 ];
 
+const imagesInfo: string[] = [
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
+    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg"
+];
+
+
 export function CarouselSize() {
     return (
-        <Carousel opts={{ align: "start" }} className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl pl-8 sm:pl-0 pt-10">
+        <Carousel
+            plugins={[
+                Autoplay({
+                    delay: 2000,
+                    stopOnInteraction: false,
+                }),
+            ]}
+            opts={{ align: "start", loop: true }} className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl pl-8 sm:pl-0 pt-10">
             <CarouselContent>
                 {images.map((src: string, index: number) => (
+                    <CarouselItem key={index} className="sm:basis-2 md:basis-1/2 lg:basis-1/4">
+                        <div className="p-1">
+                            <Card className="shadow-none border-none">
+                                <CardContent className="flex aspect-square items-center justify-center p-1">
+                                    <img src={src} alt={`Imagen ${index + 1}`} className="w-full h-full object-cover rounded-lg" />
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </CarouselItem>
+                ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+        </Carousel>
+    );
+}
+
+export function CarouselSizeInfo() {
+    return (
+        <Carousel
+            plugins={[
+                Autoplay({
+                    delay: 2000,
+                    stopOnInteraction: false,
+                }),
+            ]}
+            opts={{ align: "start", loop: true }}
+            className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl pl-8 sm:pl-0 pt-10"
+        >
+            <CarouselContent>
+                {imagesInfo.map((src: string, index: number) => (
                     <CarouselItem key={index} className="sm:basis-2 md:basis-1/2 lg:basis-1/4">
                         <div className="p-1">
                             <Card className="shadow-none border-none">
@@ -148,7 +202,7 @@ export default function PartnersPage() {
                         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
                             INTERCERT PARTNER
                         </h1>
-                        <p className="text-muted-foreground sm:text-4xl md:text-xl  ">
+                        <p className=" sm:text-4xl md:text-xl text-white ">
                             Sé parte de la mejor red global de certificación
                         </p>
                         <div className="flex flex-col gap-2 min-[400px]:flex-row justify-end">
@@ -182,12 +236,12 @@ export default function PartnersPage() {
                     </span>
                 </div>
                 <div className="w-full text-center bg-blue-500 p-6 text-white">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div className={`flex flex-col px-5 max-w-xl my-12`}>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className={`flex items-center flex-col px-5 max-w-xl my-12 md:col-span-1 pt-10 `}>
                             <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">
-                                ¿Qué es Intercert Partner?
+                                ¿Qué es Intercert <br/> Partner?
                             </h2>
-                            <span className="leading-7 [&:not(:first-child)]:mt-6">
+                            <span className="leading-7 [&:not(:first-child)]:mt-6 max-w-xs mx-auto pt-4">
                                 Es un esquema que Intercert ha desarrollado con el objetivo de respaldar y escalar los
                                 negocios de todos aquellos profesionales del rubro de la gestión y de la calidad que no
                                 cuentan con el tiempo, formación, recursos humanos e inversión financiera para crear su propio
@@ -197,7 +251,7 @@ export default function PartnersPage() {
                                 Beneficios de ser Partner de Intercert
                             </span>
                         </div>
-                        <div className="p-4 bg-blue-500 shadow-lg rounded-lg max-w-6xl mx-auto md:w-5/6 text-black">
+                        <div className="p-4 bg-blue-500 shadow-lg rounded-lg max-w-6xl mx-auto md:w-5/6 text-black md:col-span-2">
                             <ul className="space-y-1">
                                 {items.map((item, index) => (
                                     <li key={index} className="border-b pb-2">
@@ -224,7 +278,18 @@ export default function PartnersPage() {
                     </h2>
                     <CarouselSize />
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 max-w-6xl">
+                <div className={`flex flex-col px-4 max-w-5xl my-12`}>
+                    <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">
+                        No te pierdas nuestros Infoproductos
+                    </h2>
+                    <CarouselSizeInfo />
+                </div>
+                <div className={`w-full bg-blue-300 p-6`}>
+                    <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black bg-blue-300 p-4">
+                        ¿Cómo covertirte en PARTNER?
+                    </h2>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-6 max-w-6xl pt-10 pb-10">
                     {columnData.map((col, index) => (
                         <div key={index} className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg">
                             <img src={`/numbers-partners/Imagen${index + 1}.webp`} alt={`Imagen ${index + 1}`} className="w-32 h-32 object-cover rounded-full" />
@@ -237,7 +302,6 @@ export default function PartnersPage() {
                         </div>
                     ))}
                 </div>
-
 
             </div>
         </>
