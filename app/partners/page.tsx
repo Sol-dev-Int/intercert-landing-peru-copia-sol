@@ -58,7 +58,7 @@ export function CarouselSize() {
             opts={{ align: "start", loop: true }} className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl pl-8 sm:pl-0 pt-10">
             <CarouselContent>
                 {images.map((src: string, index: number) => (
-                    <CarouselItem key={index} className="sm:basis-2 md:basis-1/2 lg:basis-1/4">
+                    <CarouselItem key={index} className="sm:basis-2 md:basis-1/2 lg:basis-1/5">
                         <div className="p-1">
                             <Card className="shadow-none border-none">
                                 <CardContent className="flex aspect-square items-center justify-center p-1">
@@ -85,18 +85,23 @@ export function CarouselSizeInfo() {
                 }),
             ]}
             opts={{ align: "start", loop: true }}
-            className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl pl-8 sm:pl-0 pt-10"
+            className="w-full max-w-4xl mx-auto"
         >
             <CarouselContent>
                 {imagesInfo.map((src: string, index: number) => (
-                    <CarouselItem key={index} className="sm:basis-2 md:basis-1/2 lg:basis-1/4">
-                        <div className="p-1">
-                            <Card className="shadow-none border-none">
-                                <CardContent className="flex aspect-square items-center justify-center p-1">
-                                    <img src={src} alt={`Imagen ${index + 1}`} className="w-full h-full object-cover rounded-lg" />
-                                </CardContent>
-                            </Card>
-                        </div>
+                    <CarouselItem
+                        key={index}
+                        className="w-full aspect-square sm:basis-1/2 md:basis-1/3 lg:basis-1/3 bg-transparent"
+                    >
+                        <Card className="shadow-none border-none bg-transparent">
+                            <CardContent className="flex aspect-square items-center justify-center p-0 bg-transparent">
+                                <img
+                                    src={src}
+                                    alt={`Imagen ${index + 1}`}
+                                    className="w-full h-full object-cover rounded-lg"
+                                />
+                            </CardContent>
+                        </Card>
                     </CarouselItem>
                 ))}
             </CarouselContent>
@@ -105,6 +110,7 @@ export function CarouselSizeInfo() {
         </Carousel>
     );
 }
+
 
 export default function PartnersPage() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -235,44 +241,50 @@ export default function PartnersPage() {
                         nuestros clientes a nivel global.
                     </span>
                 </div>
-                <div className="w-full text-center bg-blue-500 p-6 text-white">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className={`flex items-center flex-col px-5 max-w-xl my-12 md:col-span-1 pt-10 `}>
+                <div className="w-full text-center text-white h-full min-h-screen">
+                    <div className="flex flex-col  md:flex-row h-screen">
+                        <div className="flex items-center flex-col px-15 pt-30 flex-1 h-full
+                            bg-[url('/grupo-ingenieros-trabajadores-saludando-alegremente-sonriendo-juntos_1257223-162877.avif')] bg-cover bg-center bg-no-repeat">
                             <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">
-                                ¿Qué es Intercert <br/> Partner?
+                                ¿Qué es Intercert <br /> Partner?
                             </h2>
-                            <span className="leading-7 [&:not(:first-child)]:mt-6 max-w-xs mx-auto pt-4">
-                                Es un esquema que Intercert ha desarrollado con el objetivo de respaldar y escalar los
-                                negocios de todos aquellos profesionales del rubro de la gestión y de la calidad que no
-                                cuentan con el tiempo, formación, recursos humanos e inversión financiera para crear su propio
-                                organismo de certificación.
+                            <span className="text-xl leading-7 [&:not(:first-child)]:mt-6 max-w-xs mx-auto pt-4 text-white">
+                            Es un esquema que Intercert ha desarrollado con el objetivo de respaldar y escalar los
+                            negocios de todos aquellos profesionales del rubro de la gestión y de la calidad que no
+                            cuentan con el tiempo, formación, recursos humanos e inversión financiera para crear su propio
+                            organismo de certificación.
                             </span>
-                            <span className="leading-7 [&:not(:first-child)]:mt-6">
-                                Beneficios de ser Partner de Intercert
+                            <span className="text-xl leading-7 [&:not(:first-child)]:mt-6 text-white">
+                            Beneficios de ser Partner de Intercert
                             </span>
                         </div>
-                        <div className="p-4 bg-blue-500 shadow-lg rounded-lg max-w-6xl mx-auto md:w-5/6 text-black md:col-span-2">
+                        <div className="p-4  shadow-lg max-w-3/5 mx-auto md:w-5/ bg-blue-950 ">
                             <ul className="space-y-1">
                                 {items.map((item, index) => (
-                                    <li key={index} className="border-b pb-2">
+                                    <li key={index} className="border-b pb-4">
                                         <button
                                             onClick={() => toggleItem(index)}
-                                            className="w-full text-left font-semibold p-2 max-w-5xl hover:bg-gray-100 rounded"
+                                            className="w-full text-left font-semibold p-2 max-w-5xl hover:bg-gray-500 rounded"
                                         >
                                             {item}
                                         </button>
-                                        {openIndex === index && (
-                                            <div className="mt-2 p-2 bg-gray-200 rounded transition-all">
-                                                {descriptions[index]}
-                                            </div>
-                                        )}
+                                        <div
+                                            className={`overflow-hidden transition-all duration-400 ease-in-out text-black ${
+                                                openIndex === index ? "max-h-40 opacity-100 p-2 bg-gray-200 rounded" : "max-h-0 opacity-0 p-0"
+                                            }`}
+                                        >
+                                            {descriptions[index]}
+                                        </div>
                                     </li>
                                 ))}
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div className={`flex flex-col px-4 max-w-5xl my-12`}>
+
+
+
+                <div className={`flex flex-col px-4 w-full my-12 items-center`}>
                     <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">
                         Auditorias y certificaciones disponibles
                     </h2>
@@ -284,6 +296,47 @@ export default function PartnersPage() {
                     </h2>
                     <CarouselSizeInfo />
                 </div>
+
+                <div className="w-full bg-blue-950 p-12 ">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h2 className="text-center md:text-left text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+                                    No te pierdas nuestros Infoproductos
+                                </h2>
+                            </div>
+                            <div className="w-full">
+                                <CarouselSizeInfo />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div className="flex flex-col items-center px-4 max-w-5xl mx-auto my-12">
+                    <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">
+                        Nuestros Reconocimientos
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full pt-10">
+                        <div className="flex items-center">
+                            <p className="text-lg text-gray-700">
+                                Nuestros organismos de acreditación son miembros signatarios del MLA del IAF Y APAC,
+                                permitiendo que los certificados emitidos  por INTERCERT sean válidos en cualquier
+                                parte del mundo
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-2 gap-12">
+                            <img src="/reconocimientos/apac.png" alt="Imagen 1" className="rounded-lg" />
+                            <img src="/reconocimientos/iaf.png" alt="Imagen 2" className="rounded-lg" />
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div className={`w-full bg-blue-300 p-6`}>
                     <h2 className="text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black bg-blue-300 p-4">
                         ¿Cómo covertirte en PARTNER?
