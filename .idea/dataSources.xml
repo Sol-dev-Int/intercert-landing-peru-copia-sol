@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="intercert_certificates@dpg-cv86cgin91rc73cgct90-a.oregon-postgres.render.com" uuid="2caabf98-0829-4694-afa8-cf0bca95183b">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dpg-cv86cgin91rc73cgct90-a.oregon-postgres.render.com:5432/intercert_certificates?user\=intercert_user&amp;password\=JLGBtARmJYhDLLpjUaACLbHoOwxyAb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
