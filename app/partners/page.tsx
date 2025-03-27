@@ -31,19 +31,18 @@ const images: string[] = [
 ];
 
 const imagesInfo: string[] = [
-    "/infoproductos/1.png",
-    "/infoproductos/2.png",
-    "/infoproductos/3.png",
-    "/infoproductos/4.png",
-    "/infoproductos/5.png",
-    "/infoproductos/6.png",
-    "/infoproductos/7.png",
-    "/infoproductos/8.png",
-    "/infoproductos/9.png",
-    "/infoproductos/10.png",
-    "/infoproductos/11.png",
-    "/infoproductos/12.png",
-    "/infoproductos/13.png"
+    "/infoproductos/Mesa de trabajo 1.webp",
+    "/infoproductos/Mesa de trabajo 2.webp",
+    "/infoproductos/Mesa de trabajo 3.webp",
+    "/infoproductos/Mesa de trabajo 4.webp",
+    "/infoproductos/Mesa de trabajo 5.webp",
+    "/infoproductos/Mesa de trabajo 6.webp",
+    "/infoproductos/Mesa de trabajo 7.webp",
+    "/infoproductos/Mesa de trabajo 8.webp",
+    "/infoproductos/Mesa de trabajo 9.webp",
+    "/infoproductos/Mesa de trabajo 10.webp",
+    "/infoproductos/Mesa de trabajo 11.webp",
+    "/infoproductos/Mesa de trabajo 12.webp"
 ];
 
 

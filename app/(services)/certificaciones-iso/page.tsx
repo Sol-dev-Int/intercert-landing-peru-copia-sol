@@ -154,7 +154,7 @@ const images = [
             "almacenamiento seguro y adecuado de productos, evitando su contaminación, deterioro o pérdida de calidad. " +
             "Estas prácticas incluyen el control de temperatura, humedad, ventilación, organización y rotación de inventarios " +
             "para asegurar la seguridad y eficacia de los productos almacenados.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/bpm.webp",
@@ -164,7 +164,7 @@ const images = [
             "Las Buenas Prácticas de Manufactura (BPM) son normas que aseguran la calidad, seguridad e higiene en la producción " +
             "de alimentos, medicamentos y otros productos. Se enfocan en la limpieza, control de procesos, capacitación del personal " +
             "y cumplimiento de estándares sanitarios para evitar riesgos de contaminación.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/haccp.webp",
@@ -174,7 +174,7 @@ const images = [
             "El HACCP es un sistema de gestión de seguridad alimentaria que identifica, evalúa y controla los peligros en la " +
             "producción de alimentos. Su objetivo es prevenir riesgos de contaminación mediante la vigilancia de puntos críticos " +
             "en la cadena de producción, garantizando alimentos seguros para el consumo.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/iso10002.webp",
@@ -184,7 +184,7 @@ const images = [
             "La ISO 10002 es una norma internacional que establece directrices para la gestión de quejas y reclamaciones de los " +
             "clientes. Su objetivo es mejorar la satisfacción del cliente mediante un proceso eficaz y transparente para recibir, evaluar " +
             "y resolver quejas, promoviendo la mejora continua en la organización.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/iso17020.webp",
@@ -194,7 +194,7 @@ const images = [
             "La ISO 17020 establece los requisitos para la competencia, imparcialidad y funcionamiento de los organismos de inspección. " +
             "Su objetivo es asegurar que estas entidades realicen evaluaciones confiables y consistentes, garantizando la calidad " +
             "y credibilidad de los procesos de inspección en diversos sectores.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/iso17021.webp",
@@ -204,7 +204,7 @@ const images = [
             "La ISO 17021 define los requisitos que deben cumplir los organismos de certificación para garantizar su competencia, " +
             "imparcialidad y coherencia en la auditoría y certificación de sistemas de gestión. Su objetivo es asegurar la credibilidad " +
             "de los procesos de certificación en diferentes sectores.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/iso17025.webp",
@@ -214,7 +214,7 @@ const images = [
             "La ISO 17025 establece los requisitos para la competencia técnica y la calidad en laboratorios de ensayo y calibración. " +
             "Su objetivo es asegurar la confiabilidad de los resultados mediante buenas prácticas, control de calidad y trazabilidad " +
             "en las mediciones.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/iso22005.webp",
@@ -224,7 +224,7 @@ const images = [
             "La ISO 22005 establece los principios y requisitos para la trazabilidad en la cadena de suministro de alimentos y piensos. " +
             "Su objetivo es garantizar la seguridad y calidad de los productos mediante un sistema que permita rastrear el origen, " +
             "procesamiento y distribución, asegurando transparencia y confianza en el mercado.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/iso31000.webp",
@@ -233,7 +233,7 @@ const images = [
         description:
             "La ISO 31000 proporciona un marco para la gestión del riesgo en cualquier organización. Su objetivo es ayudar a identificar, evaluar " +
             "y mitigar riesgos, mejorando la toma de decisiones y la resiliencia ante incertidumbres, promoviendo una gestión proactiva y eficiente.",
-
+        certifiedBy: "Intercert",
     },
     {
         src: "/iso-certificacions/iso56002.webp",
@@ -243,8 +243,36 @@ const images = [
             "La ISO 56002 establece un marco para la gestión de la innovación en organizaciones de cualquier tamaño o sector. Su objetivo es fomentar " +
             "una cultura innovadora, mejorar la capacidad de desarrollo de nuevos productos, servicios y procesos, y aumentar la competitividad mediante " +
             "un enfoque estructurado y sistemático.",
-
+        certifiedBy: "Intercert",
     },
+    {
+        src: "/iso-certificacions/iso90003.webp",
+        title: "ISO 90003",
+        subtitle: "Directrices para la Aplicación de la ISO 9001 en Software",
+        description:
+            "La ISO 90003 proporciona recomendaciones para aplicar los principios de la ISO 9001 en el desarrollo, suministro y mantenimiento de software. " +
+            "Su objetivo es garantizar la calidad, fiabilidad y mejora continua en los procesos relacionados con productos y servicios de software.",
+        certifiedBy: "Intercert",
+    },
+    {
+        src: "/iso-certificacions/isoiec2382.webp",
+        title: "ISO/IEC 2382",
+        subtitle: "Tecnología de la Información - Vocabulario de términos sobre la tecnología de la información",
+        description:
+            "La ISO/IEC 2382 es un estándar que establece un vocabulario unificado para las tecnologías de la información (TI). Su objetivo es facilitar " +
+            "la comunicación y comprensión en el ámbito de la informática mediante definiciones claras y consistentes de términos utilizados en el sector.",
+        certifiedBy: "Intercert",
+    },
+    {
+        src: "/iso-certificacions/isoiec29119.webp",
+        title: "ISO 29119",
+        subtitle: "Estándares para la Prueba de Software",
+        description:
+            "La ISO 29119 es un conjunto de estándares internacionales que establecen buenas prácticas para la planificación, diseño, ejecución y documentación " +
+            "de pruebas de software. Su objetivo es garantizar la calidad, confiabilidad y eficiencia en los procesos de prueba, aplicándose a distintos modelos " +
+            "de desarrollo y sectores.",
+        certifiedBy: "Intercert",
+    }
 ];
 
 export default function ImpartialityPolicyPage() {
@@ -304,7 +332,7 @@ export default function ImpartialityPolicyPage() {
             </div>
 
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 px-2 sm:px-4 md:px-8 lg:px-16 pt-5 pb-20">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6 px-2 sm:px-4 md:px-8 lg:px-10 xl:px-115 pt-5 pb-20">
                 {images.map((item, index) => {
                     const isHovered = activeIndex === index;
                     return (
@@ -314,9 +342,9 @@ export default function ImpartialityPolicyPage() {
                             onClick={() => setActiveIndex(isHovered ? null : index)}
                         >
                             <img src={item.src} alt={item.title} className="w-full h-auto block" />
-                            <div className={`absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-80 group-active:opacity-80 transition-opacity p-4 text-white text-center text-xs sm:text-sm md:text-base ${isHovered ? 'opacity-80' : ''}`}>
-                                <p className="text-[10px] sm:text-[10px] lg:text-[12px]">{item.description}</p>
-                                <p className="font-bold mt-2 text-[8px] sm:text-[8px] md:text-base lg:text-base">Certificados por: {item.certifiedBy}</p>
+                            <div className={`absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-82 group-active:opacity-80 transition-opacity p-4 text-white text-center text-xs sm:text-sm md:text-base ${isHovered ? 'opacity-80' : ''}`}>
+                                <p className="text-[10px] sm:text-[10px] lg:text-[13px]">{item.description}</p>
+                                <p className="font-bold mt-2 text-[8px] sm:text-[8px] md:text-base lg:text-[13px]">Certificados por: {item.certifiedBy}</p>
                             </div>
                             <div className="text-center font-bold text-[#1f186e] text-sm sm:text-base md:text-lg lg:text-xl mt-2">
                                 {item.title}
