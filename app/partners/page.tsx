@@ -27,22 +27,23 @@ const images: string[] = [
     "/iso-certificacions/iso90003.webp",
     "/iso-certificacions/isoiec2382.webp",
     "/iso-certificacions/isoiec29119.webp",
-    "/iso-certificacions/sio10002.webp"
+    "/iso-certificacions/iso10002.webp"
 ];
 
 const imagesInfo: string[] = [
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg",
-    "/infoproductos/seguridad-salud-en-el-trabajo.jpeg"
+    "/infoproductos/1.png",
+    "/infoproductos/2.png",
+    "/infoproductos/3.png",
+    "/infoproductos/4.png",
+    "/infoproductos/5.png",
+    "/infoproductos/6.png",
+    "/infoproductos/7.png",
+    "/infoproductos/8.png",
+    "/infoproductos/9.png",
+    "/infoproductos/10.png",
+    "/infoproductos/11.png",
+    "/infoproductos/12.png",
+    "/infoproductos/13.png"
 ];
 
 
@@ -91,7 +92,7 @@ export function CarouselSizeInfo() {
                 {imagesInfo.map((src: string, index: number) => (
                     <CarouselItem
                         key={index}
-                        className="w-full aspect-square sm:basis-1/2 md:basis-1/3 lg:basis-1/3 bg-transparent"
+                        className="w-full aspect-square sm:basis-1/2 md:basis-1/3 lg:basis-1/4 bg-transparent"
                     >
                         <Card className="shadow-none border-none bg-transparent">
                             <CardContent className="flex aspect-square items-center justify-center p-0 bg-transparent">

@@ -134,8 +134,9 @@ const images = [
             "del negocio. Su objetivo es ayudar a las organizaciones a prepararse, responder y recuperarse de interrupciones, " +
             "garantizando la continuidad de sus operaciones críticas.",
         certifiedBy: "UAF",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
+    },
+    {
+        src: "/iso-certificacions/ISO-13485.webp",
         title: "ISO 13485",
         subtitle: "Sistema de Gestión de la Calidad para Dispositivos Médicos",
         description:
@@ -143,70 +144,107 @@ const images = [
             "en la industria de dispositivos médicos. Su objetivo es asegurar que las organizaciones diseñen, desarrollen " +
             "y fabriquen productos seguros y efectivos, cumpliendo con las regulaciones aplicables.",
         certifiedBy: "UAF",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+    },
+    {
+        src: "/iso-certificacions/bpa.webp",
+        title: "BPA",
+        subtitle: "Normativa BPA",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+            " Las Buenas Prácticas de Almacenamiento (BPA) son un conjunto de normas y procedimientos que garantizan el " +
+            "almacenamiento seguro y adecuado de productos, evitando su contaminación, deterioro o pérdida de calidad. " +
+            "Estas prácticas incluyen el control de temperatura, humedad, ventilación, organización y rotación de inventarios " +
+            "para asegurar la seguridad y eficacia de los productos almacenados.",
+
+    },
+    {
+        src: "/iso-certificacions/bpm.webp",
+        title: "Normativa BPM",
+        subtitle: "Buenas Prácticas de Manufactura",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+            "Las Buenas Prácticas de Manufactura (BPM) son normas que aseguran la calidad, seguridad e higiene en la producción " +
+            "de alimentos, medicamentos y otros productos. Se enfocan en la limpieza, control de procesos, capacitación del personal " +
+            "y cumplimiento de estándares sanitarios para evitar riesgos de contaminación.",
+
+    },
+    {
+        src: "/iso-certificacions/haccp.webp",
+        title: "HACCP",
+        subtitle: "Sistema de análisis de peligros y puntos críticos de control en la seguridad alimentaria",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+            "El HACCP es un sistema de gestión de seguridad alimentaria que identifica, evalúa y controla los peligros en la " +
+            "producción de alimentos. Su objetivo es prevenir riesgos de contaminación mediante la vigilancia de puntos críticos " +
+            "en la cadena de producción, garantizando alimentos seguros para el consumo.",
+
+    },
+    {
+        src: "/iso-certificacions/iso10002.webp",
+        title: "ISO 10002",
+        subtitle: "Gestión de la Satisfacción del Cliente",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+            "La ISO 10002 es una norma internacional que establece directrices para la gestión de quejas y reclamaciones de los " +
+            "clientes. Su objetivo es mejorar la satisfacción del cliente mediante un proceso eficaz y transparente para recibir, evaluar " +
+            "y resolver quejas, promoviendo la mejora continua en la organización.",
+
+    },
+    {
+        src: "/iso-certificacions/iso17020.webp",
+        title: "ISO 17020",
+        subtitle: "Requisitos para la competencia de organismos que realizan inspección",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+            "La ISO 17020 establece los requisitos para la competencia, imparcialidad y funcionamiento de los organismos de inspección. " +
+            "Su objetivo es asegurar que estas entidades realicen evaluaciones confiables y consistentes, garantizando la calidad " +
+            "y credibilidad de los procesos de inspección en diversos sectores.",
+
+    },
+    {
+        src: "/iso-certificacions/iso17021.webp",
+        title: "ISO 17021",
+        subtitle: "Requisitos para la acreditación de organismos de auditoria y certificación de sistemas de gestión",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+            "La ISO 17021 define los requisitos que deben cumplir los organismos de certificación para garantizar su competencia, " +
+            "imparcialidad y coherencia en la auditoría y certificación de sistemas de gestión. Su objetivo es asegurar la credibilidad " +
+            "de los procesos de certificación en diferentes sectores.",
+
+    },
+    {
+        src: "/iso-certificacions/iso17025.webp",
+        title: "ISO 17025",
+        subtitle: "Requisitos para acreditación de laboratorios de ensayos y calibración",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+            "La ISO 17025 establece los requisitos para la competencia técnica y la calidad en laboratorios de ensayo y calibración. " +
+            "Su objetivo es asegurar la confiabilidad de los resultados mediante buenas prácticas, control de calidad y trazabilidad " +
+            "en las mediciones.",
+
+    },
+    {
+        src: "/iso-certificacions/iso22005.webp",
+        title: "ISO 22005",
+        subtitle: "Trazabilidad en la cadena alimentaria",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    },    {
-        src: "/iso-certificacions/iso90003.webp",
-        title: "ISO 9001",
-        subtitle: "Sistema de Gestión de Calidad",
+            "La ISO 22005 establece los principios y requisitos para la trazabilidad en la cadena de suministro de alimentos y piensos. " +
+            "Su objetivo es garantizar la seguridad y calidad de los productos mediante un sistema que permita rastrear el origen, " +
+            "procesamiento y distribución, asegurando transparencia y confianza en el mercado.",
+
+    },
+    {
+        src: "/iso-certificacions/iso31000.webp",
+        title: "ISO 31000",
+        subtitle: "Gestión del Riesgo - Principios y Directrices",
         description:
-            "ISO 9001 es una norma internacional que establece criterios para un sistema de gestión de calidad...",
-        certifiedBy: "SCC, KAB",
-    }
+            "La ISO 31000 proporciona un marco para la gestión del riesgo en cualquier organización. Su objetivo es ayudar a identificar, evaluar " +
+            "y mitigar riesgos, mejorando la toma de decisiones y la resiliencia ante incertidumbres, promoviendo una gestión proactiva y eficiente.",
+
+    },
+    {
+        src: "/iso-certificacions/iso56002.webp",
+        title: "ISO 56002",
+        subtitle: "Gestión de la Innovación - Directrices",
+        description:
+            "La ISO 56002 establece un marco para la gestión de la innovación en organizaciones de cualquier tamaño o sector. Su objetivo es fomentar " +
+            "una cultura innovadora, mejorar la capacidad de desarrollo de nuevos productos, servicios y procesos, y aumentar la competitividad mediante " +
+            "un enfoque estructurado y sistemático.",
+
+    },
 ];
 
 export default function ImpartialityPolicyPage() {
@@ -273,11 +311,11 @@ export default function ImpartialityPolicyPage() {
                         <div
                             key={index}
                             className="relative group overflow-hidden"
-                            onClick={() => setActiveIndex(isHovered ? null : index)} // Activa en móviles con touch
+                            onClick={() => setActiveIndex(isHovered ? null : index)}
                         >
                             <img src={item.src} alt={item.title} className="w-full h-auto block" />
                             <div className={`absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-80 group-active:opacity-80 transition-opacity p-4 text-white text-center text-xs sm:text-sm md:text-base ${isHovered ? 'opacity-80' : ''}`}>
-                                <p className="text-[10px] sm:text-[10px]">{item.description}</p>
+                                <p className="text-[10px] sm:text-[10px] lg:text-[12px]">{item.description}</p>
                                 <p className="font-bold mt-2 text-[8px] sm:text-[8px] md:text-base lg:text-base">Certificados por: {item.certifiedBy}</p>
                             </div>
                             <div className="text-center font-bold text-[#1f186e] text-sm sm:text-base md:text-lg lg:text-xl mt-2">
